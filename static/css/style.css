@@ -1,0 +1,1480 @@
+@font-face {
+    font-family: Something Strange;
+    src: url(/static/assets/fonts/Something\ Strange.ttf);
+}
+
+@font-face {
+    font-family: ZOMBIES NIGHT;
+    src: url(/static/assets/fonts/ZOMBIES\ NIGHT.ttf);
+}
+
+@font-face {
+    font-family: Poppines;
+    src: url(/static/assets/fonts/Poppins-Regular.ttf);
+}
+
+/* page1 */
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    border: none;
+}
+
+.background {
+    overflow: auto;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    background: url("/static/images/background.png") no-repeat center fixed;
+    background-size: cover;
+}
+
+.main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submain1 {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 6% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submain12 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submain2 > a > img {
+    cursor: pointer;
+    width: 56px;
+}
+
+.iconDiv {
+    width: 50%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.icon {
+    float: right;
+    width: 37%;
+    min-width: 245px;
+}
+
+.textNight {
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0px;
+    padding-left: 2%;
+}
+
+.textNight1 {
+    width: 50%;
+}
+
+.textNight1 > p {
+    margin: 0px;
+    font-size: 7rem;
+    color: #d21919;
+    letter-spacing: 1px;
+    font-family: Something Strange;
+}
+
+.textNight2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 193px;
+}
+
+.textNight2 > p {
+    margin: 0px;
+    color: white;
+    font-family: Something Strange;
+    text-align: left;
+    font-size: 21px;
+}
+
+.message {
+    display: none;
+}
+
+/* @media screen and (max-width:449px) {
+    .submain1 {
+        flex-direction: column;
+    }
+    .iconDiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 28px 0px 0px 0px;
+    }
+    .main {
+        padding: 10px;
+        justify-content: flex-start;
+    }
+    .icon {
+        min-width: 125px;
+        float: none;
+    }
+    .textNight {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .textNight1 {
+        text-align: center;
+        width: 100%;
+    }
+    .textNight1>P {
+        font-size: 4rem;
+    }
+    .textNight2 {
+        padding-left: 163px;
+    }
+    .textNight2>P {
+        font-size: 16px;
+    }
+    .submain2 {
+        display: none;
+    }
+    .message {
+        margin-top: 6vh;
+        display: block;
+        width: 96%;
+        text-align: center;
+        box-sizing: border-box;
+        margin: 15px 0px;
+        background: rgba(171, 171, 171, 0.119);
+        border: 2px solid rgba(210, 25, 25, 0.3);
+        box-shadow: inset 30px -30px 30px rgb(130 130 130 / 12%), inset -30px 30px 30px rgb(255 255 255 / 12%);
+        backdrop-filter: blur(2px);
+        border-radius: 10px;
+        padding: 0px 10px;
+    }
+    .message>p {
+        font-size: 19px;
+        color: white;
+        font-family: 'Something Strange';
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+} */
+
+@media screen and (max-width: 850px) and (min-width: 613px) {
+    .textNight1 > p {
+        font-size: 5.5rem;
+    }
+    .textNight2 {
+        padding-left: 91px;
+    }
+    .icon {
+        min-width: 193px;
+        float: none;
+    }
+    .iconDiv {
+        display: flex;
+        justify-content: center;
+    }
+    .submain2 > a > img {
+        width: 52px;
+    }
+}
+
+@media screen and (max-width: 612px) and (min-width: 500px) {
+    .textNight2 {
+        padding-left: 86px;
+    }
+    .textNight2 > P {
+        font-size: 16px;
+    }
+    .textNight1 > p {
+        font-size: 4.5rem;
+    }
+    .icon {
+        min-width: 178px;
+        float: none;
+    }
+    .submain2 > a > img {
+        cursor: pointer;
+        width: 50px;
+    }
+    .iconDiv {
+        padding: 0px;
+        width: 42%;
+    }
+    .textNight {
+        padding-left: 6%;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .textNight1 > p {
+        font-size: 6rem;
+    }
+    /* .textNight2 {
+        padding-left: 248px;
+    } */
+    .icon {
+        min-width: 200px;
+    }
+    .submain2 > a > img {
+        cursor: pointer;
+        width: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .textNight1 > p {
+        font-size: 8rem;
+    }
+    .textNight2 {
+        padding-left: 248px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .textNight1 > p {
+        font-size: 9rem;
+    }
+    .textNight2 {
+        padding-left: 300px;
+    }
+    .submain2 > a > img {
+        width: 70px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .textNight1 > p {
+        font-size: 10rem;
+    }
+    .textNight2 {
+        padding-left: 335px;
+    }
+    .textNight {
+        bottom: 24px;
+    }
+}
+
+/* page2 */
+
+.mainP2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.submain1P2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.iconDivP2 {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+.iconP2 {
+    width: 300px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.textNight1P2 {
+    width: 79%;
+}
+
+.textNight1P2 > p {
+    margin: 0px;
+    font-size: 9.1rem;
+    color: #d21919;
+    letter-spacing: 1px;
+    font-family: Something Strange;
+}
+
+.textNightP2 {
+    margin-left: 50px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.textNight2P2 {
+    margin: 0px;
+    color: white;
+    font-family: Something Strange;
+}
+
+.textNight2P2 > p {
+    margin: 0px;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+
+.submain2P2 {
+    width: 450px;
+    margin-top: 2%;
+}
+
+.submain2P2 > p {
+    font-size: 30px;
+    color: white;
+    font-family: Something Strange;
+}
+
+.buttonP2 {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 160px;
+    display: flex;
+    background: rgba(171, 171, 171, 0.119);
+    border: 2px solid rgba(210, 25, 25, 0.3);
+    box-shadow: inset 30px -30px 30px rgba(130, 130, 130, 0.119), inset -30px 30px 30px rgba(255, 255, 255, 0.119);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.buttonP2 > p {
+    margin: 0px;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    font-family: Something Strange;
+}
+
+.buttonP2 > img {
+    margin-top: 3px;
+    margin-left: 10px;
+    width: 13px;
+    height: 13px;
+}
+
+@media screen and (min-width: 1800px) {
+    .textNight1P2 > p {
+        font-size: 11em;
+    }
+    .textNight2P2 > p {
+        font-size: 30px;
+    }
+    .submain2P2 > p {
+        font-size: 3rem;
+    }
+    .submain2P2 {
+        width: 727px;
+    }
+    .iconP2 {
+        width: 33%;
+        min-width: 313px;
+    }
+    .textNight1P2 {
+        width: 50%;
+    }
+    .buttonP2 {
+        width: 200px;
+    }
+    .buttonP2 > p {
+        font-size: 23px;
+    }
+    .buttonP2 > img {
+        width: 18px;
+        height: 18px;
+        margin-top: 5px;
+        margin-left: 7px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+    .textNight1P2 > p {
+        font-size: 8em;
+    }
+    .textNight2P2 > p {
+        font-size: 25px;
+    }
+    .submain2P2 > p {
+        font-size: 2rem;
+    }
+    .submain2P2 {
+        width: 485px;
+    }
+    .iconP2 {
+        width: 33%;
+        min-width: 280px;
+    }
+    .textNight1P2 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .textNight1P2 > p {
+        font-size: 7em;
+    }
+    .textNight2P2 > p {
+        font-size: 21px;
+    }
+    .submain2P2 > p {
+        font-size: 1.8rem;
+    }
+    .submain2P2 {
+        width: 440px;
+    }
+    .iconP2 {
+        width: 33%;
+        min-width: 260px;
+    }
+    .textNight1P2 {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+    .textNight1P2 > p {
+        font-size: 4.6em;
+    }
+    .textNight2P2 > p {
+        font-size: 21px;
+    }
+    .submain2P2 > p {
+        font-size: 1.5rem;
+    }
+    .submain2P2 {
+        width: 360px;
+        margin-top: 10%;
+    }
+    .iconP2 {
+        width: 33%;
+        min-width: 186px;
+    }
+    .textNight1P2 {
+        width: 50%;
+    }
+    .iconDivP2 {
+        padding-right: 0px;
+    }
+    .buttonP2 {
+        margin-top: 4%;
+    }
+}
+
+/* page3 */
+
+.P3main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.P3iconDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.P3icon {
+    width: 10%;
+    min-width: 100px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.P3textNight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.P3textNight1 {
+    width: 100%;
+}
+
+.P3textNight1 > p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #d21919;
+    letter-spacing: 0.05em;
+    font-family: Something Strange;
+    font-size: 10rem;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 37px;
+}
+
+.P3button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 7vh;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(171, 171, 171, 0.119);
+    border: 2px solid rgba(210, 25, 25, 0.3);
+    box-shadow: inset 30px -30px 30px rgb(130 130 130 / 12%), inset -30px 30px 30px rgb(255 255 255 / 12%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 0px;
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: Something Strange;
+}
+
+.aP3 {
+    text-decoration: none;
+    margin: 3px 0px;
+    width: 10%;
+}
+
+@media screen and (min-width: 2201px) {
+    .P3button {
+        font-size: 2rem;
+        max-height: 76px;
+    }
+    .P3textNight1 > P {
+        font-size: 12rem;
+    }
+    a {
+        min-width: 229px;
+        max-height: 76px;
+        /* margin: 13px 0px; */
+    }
+}
+
+@media screen and (min-width: 1800px) and (max-width: 2200px) {
+    .P3button {
+        font-size: 2rem;
+        max-height: 76px;
+    }
+    .P3textNight1 > P {
+        font-size: 10rem;
+    }
+    .aP3 {
+        min-width: 229px;
+        max-height: 76px;
+        /* margin: 13px 0px; */
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1799px) {
+    .aP3 {
+        min-width: 201px;
+        margin: 2px 0px;
+    }
+    .P3textNight1 > P {
+        font-size: 7rem;
+    }
+    .P3button {
+        font-size: 21px;
+        max-height: 50px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .aP3 {
+        min-width: 170px;
+        margin: 2px 0px;
+    }
+    .P3textNight1 > P {
+        font-size: 6rem;
+    }
+    .P3button {
+        font-size: 22px;
+        max-height: 50px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+    .aP3 {
+        min-width: 154px;
+        margin: 2px 0px;
+    }
+    .P3textNight1 > P {
+        font-size: 5rem;
+    }
+    .P3button {
+        font-size: 20px;
+        max-height: 46px;
+    }
+}
+
+/*page4 */
+
+.P4main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leaderBoard > p {
+    margin-top: 35px;
+    margin-bottom: -4px;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: #ad1e1e;
+    font-family: ZOMBIES NIGHT;
+}
+
+.board {
+    margin-top: 60px;
+    width: 85%;
+    box-sizing: border-box;
+    height: 61vh;
+    background: rgba(171, 171, 171, 0.119);
+    border: 2px solid rgba(210, 25, 25, 0.3);
+    box-shadow: inset 30px -30px 30px rgb(130 130 130 / 12%), inset -30px 30px 30px rgb(255 255 255 / 12%);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    min-width: 660px;
+}
+
+.P4div1 {
+    position: absolute;
+    top: 1%;
+    left: 7.5%;
+}
+
+.tableHeading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    box-sizing: border-box;
+    padding-left: 1%;
+}
+
+.tableHeading > .span1 {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 187px;
+}
+
+.tableHeading > .span2 {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 1%;
+    right: 0px;
+}
+
+.tableHeading > .span3 {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+
+.tableHeading > span > p {
+    color: #ffffff;
+    font-size: 35px;
+    margin: 0px;
+    font-family: ZOMBIES NIGHT;
+}
+
+.tableHeading > span > img {
+    width: 73px;
+    transform: rotate(-0.49deg);
+}
+
+.userBoard {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    overflow: auto;
+    margin: 0px 25px;
+}
+
+.userBoard::-webkit-scrollbar {
+    width: 0px;
+    border: none;
+}
+
+.userBoard > div > p {
+    font-size: 19px;
+    font-family: Poppines;
+    color: #ffffff;
+    margin: 8px;
+    letter-spacing: 0.5px;
+    font-style: normal;
+}
+
+.user {
+    display: flex;
+    padding: 0px 10px;
+    margin: 4.5px 10px;
+}
+
+#serialNo {
+    width: 50px;
+    min-width: 50px;
+    margin-left: 25px;
+}
+
+#name {
+    width: 254px;
+    min-width: 140px;
+    margin-left: 35px;
+}
+
+#email {
+    width: 450px;
+    min-width: 236px;
+    margin-left: 100px;
+}
+
+#points {
+    width: 25%;
+    text-align: end;
+    box-sizing: border-box;
+    padding-right: 5%;
+}
+
+@media screen {
+    .board {
+        width: 82%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .board {
+        width: 85%;
+    }
+    #name {
+        margin-left: 0px;
+        min-width: 170px;
+    }
+    #email {
+        margin-left: 0px;
+    }
+    #points {
+        margin-left: 47px;
+    }
+    .line {
+        width: 245px;
+    }
+    .leaderBoard > p {
+        font-size: 59px;
+    }
+    .iconNext {
+        width: 40px;
+        height: 40px;
+        margin-top: 52px;
+    }
+    .userBoard > div > p {
+        font-size: 16px;
+    }
+    .tableHeading > .span1 {
+        margin: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        left: 144px;
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1199px) {
+    .iconNext {
+        width: 45px;
+        height: 45px;
+    }
+    .leaderBoard > p {
+        font-size: 70px;
+    }
+    .line {
+        width: 270px;
+    }
+    .tableHeading > span > p {
+        font-size: 39px;
+    }
+    .tableHeading > span > img {
+        width: 55px;
+    }
+    .tableHeading {
+        height: 17%;
+        padding-left: 0%;
+    }
+    .userBoard {
+        margin-top: 25px;
+        height: 73%;
+    }
+    .userBoard > div > p {
+        font-size: 17px;
+    }
+    #serialNo {
+        width: 54px;
+        min-width: 54px;
+        margin-left: 25px;
+    }
+    #name {
+        width: 26%;
+    }
+    #email {
+        width: 36%;
+    }
+    .tableHeading > .span3 {
+        right: 7%;
+    }
+    .tableHeading > .span2 {
+        left: 65px;
+    }
+    .board {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    .iconNext {
+        width: 50px;
+        height: 5opx;
+    }
+    .leaderBoard > p {
+        font-size: 85px;
+    }
+    .line {
+        width: 355px;
+    }
+    .tableHeading > span > p {
+        font-size: 50px;
+    }
+    .tableHeading > span > img {
+        width: 77px;
+    }
+    .tableHeading {
+        height: 17%;
+        padding-left: 0%;
+    }
+    .userBoard {
+        margin-top: 25px;
+        height: 73%;
+    }
+    .userBoard > div > p {
+        font-size: 17.5px;
+    }
+    #serialNo {
+        width: 54px;
+        min-width: 54px;
+        margin-left: 25px;
+    }
+    #name {
+        width: 26%;
+    }
+    #email {
+        width: 36%;
+    }
+    .tableHeading > .span3 {
+        right: 7%;
+    }
+    .tableHeading > .span2 {
+        left: 65px;
+    }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2000px) {
+    .iconNext {
+        width: 60px;
+        height: 60px;
+    }
+    .leaderBoard > p {
+        font-size: 110px;
+    }
+    .line {
+        width: 461px;
+    }
+    .tableHeading > span > p {
+        font-size: 57px;
+    }
+    .tableHeading > span > img {
+        width: 89px;
+    }
+    .tableHeading {
+        height: 17%;
+        padding-left: 0%;
+    }
+    .userBoard {
+        margin-top: 25px;
+        height: 73%;
+    }
+    .userBoard > div > p {
+        font-size: 22px;
+    }
+    #serialNo {
+        width: 54px;
+        min-width: 54px;
+        margin-left: 25px;
+    }
+    #name {
+        width: 26%;
+    }
+    #email {
+        width: 36%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .iconNext {
+        width: 60px;
+        height: 60px;
+    }
+    .leaderBoard > p {
+        font-size: 110px;
+    }
+    .line {
+        width: 461px;
+    }
+    .tableHeading > span > p {
+        font-size: 57px;
+    }
+    .tableHeading > span > img {
+        width: 89px;
+    }
+    .tableHeading {
+        height: 17%;
+        padding-left: 0%;
+    }
+    .userBoard {
+        margin-top: 25px;
+        height: 73%;
+    }
+    .userBoard > div > p {
+        font-size: 22px;
+    }
+    #serialNo {
+        width: 54px;
+        min-width: 54px;
+        margin-left: 25px;
+    }
+    #name {
+        width: 26%;
+    }
+    #email {
+        width: 36%;
+    }
+}
+
+/* page5 */
+
+.P5main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.howToPlay {
+    margin-top: 8px;
+    margin-bottom: -4px;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: #ad1e1e;
+    font-family: ZOMBIES NIGHT;
+}
+
+.howToPlay > p {
+    margin-top: 35px;
+    margin-bottom: -4px;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: #ad1e1e;
+    font-family: ZOMBIES NIGHT;
+}
+
+.page5Back {
+    position: absolute;
+    left: -2.5%;
+    transform: rotate(180deg);
+    top: 9%;
+}
+
+.content > P {
+    margin: 16px;
+    font-size: 19px;
+    font-family: Poppines;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    font-style: normal;
+}
+
+iframe {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1921px) {
+    .page5Back > a > img {
+        width: 60%;
+        height: 60%;
+    }
+    .howToPlay > p {
+        font-size: 102px;
+        margin-top: 38px;
+    }
+    .Page5Underline > img {
+        width: 362px;
+    }
+    iframe {
+        margin-top: 61px;
+        height: 67vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+    .page5Back > a > img {
+        width: 51%;
+        height: 51%;
+    }
+    .howToPlay > p {
+        font-size: 102px;
+        margin-top: 30px;
+    }
+    .Page5Underline > img {
+        width: 362px;
+    }
+    iframe {
+        margin-top: 49px;
+        height: 67vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+    .page5Back > a > img {
+        width: 37%;
+        height: 37%;
+    }
+    .howToPlay > p {
+        font-size: 67px;
+        margin-top: 20px;
+    }
+    .Page5Underline > img {
+        width: 233px;
+    }
+    iframe {
+        margin-top: 40px;
+        height: 67vh;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1024px) {
+    .page5Back > a > img {
+        width: 45%;
+        height: 45%;
+    }
+    .howToPlay > p {
+        font-size: 68px;
+        margin-top: 16px;
+    }
+    .Page5Underline > img {
+        width: 235px;
+    }
+    iframe {
+        margin-top: 95px;
+        height: 59vh;
+        width: 80%;
+    }
+    .page5Back {
+        top: 6%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+    .page5Back > a > img {
+        width: 38%;
+        height: 38%;
+    }
+    .howToPlay > p {
+        font-size: 67px;
+        margin-top: 16px;
+    }
+    .Page5Underline > img {
+        width: 228px;
+    }
+    iframe {
+        margin-top: 135px;
+        height: 49vh;
+        width: 80%;
+    }
+    .howToPlay {
+        margin-top: 31px;
+    }
+}
+
+/* page6 */
+
+.P6main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div1 {
+    transform: rotate(180deg);
+}
+
+.rules {
+    margin-top: 20px;
+    margin-bottom: -13px;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: #ad1e1e;
+    font-family: ZOMBIES NIGHT;
+}
+
+.rules > p {
+    margin-top: 0px;
+    margin-bottom: -4px;
+    letter-spacing: 2px;
+    font-size: 80px;
+    color: #ad1e1e;
+    font-family: ZOMBIES NIGHT;
+}
+
+.horizontalDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: -webkit-fill-available;
+    height: 150px;
+}
+
+.div1 {
+    position: absolute;
+    left: 7.5%;
+}
+
+.iconNext {
+    margin-top: 55px;
+    transform: rotate(180deg);
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.ruleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ruleBox1 {
+    display: flex;
+    justify-content: space-around;
+    width: 68%;
+    min-width: 895px;
+    margin: 75px 0px;
+}
+
+.ruleBox2 {
+    display: flex;
+    justify-content: space-around;
+    width: 46%;
+    min-width: 603px;
+}
+
+.refDiv {
+    position: relative;
+    box-sizing: content-box;
+}
+
+.miniRuleBox {
+    width: 280px;
+    height: 175px;
+    background: rgba(171, 171, 171, 0.119);
+    border: 2px solid rgba(210, 25, 25, 0.3);
+    box-shadow: inset 30px -30px 30px rgba(130, 130, 130, 0.119), inset -30px 30px 30px rgba(255, 255, 255, 0.119);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.subMiniRuleBox {
+    font-family: Something Strange;
+    position: absolute;
+    left: 60px;
+    top: -65px;
+    font-size: 82px;
+    color: #ad1e1e;
+}
+
+.subMiniRuleBoxA {
+    font-family: Something Strange;
+    position: absolute;
+    left: 60px;
+    top: -60px;
+    font-size: 82px;
+    color: #ad1e1e;
+}
+
+.miniRuleBox > p {
+    font-family: ZOMBIES NIGHT;
+    color: #ffffff;
+    font-size: 29px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) and (max-width: 920px) {
+    .subMiniRuleBoxA {
+        font-size: 77px;
+        left: 11px;
+        top: -55px;
+    }
+    .miniRuleBox {
+        width: 226px;
+        height: 150px;
+    }
+    .miniRuleBox > p {
+        font-size: 25px;
+    }
+    .ruleBox2 {
+        min-width: 495px;
+    }
+    .ruleBox1 {
+        min-width: 745px;
+        margin-top: 29px;
+    }
+}
+
+@media screen and (min-width: 921px) and (max-width: 1399px) {
+    .horizontalDiv {
+        height: 115px;
+    }
+    .div1 {
+        left: 1.5%;
+    }
+    .div1 > a > img {
+        width: 39%;
+        height: 39%;
+    }
+    .subMiniRuleBoxA {
+        font-size: 77px;
+        left: 11px;
+        top: -55px;
+    }
+    .miniRuleBox {
+        width: 255px;
+        height: 150px;
+    }
+    .miniRuleBox > p {
+        font-size: 27px;
+    }
+    .ruleBox2 {
+        min-width: 495px;
+        width: 65%;
+        max-width: 700px;
+    }
+    .ruleBox1 {
+        min-width: 745px;
+        max-width: 1050px;
+        width: 97%;
+        margin: 65px 0px;
+    }
+    .subMiniRuleBox {
+        top: -61px;
+        left: 12px;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 2200px) {
+    .rules > p {
+        font-size: 6rem;
+    }
+    .rules {
+        margin-top: 0px;
+    }
+    .subMiniRuleBoxA {
+        font-size: 77px;
+        top: -53px;
+        left: 9px;
+    }
+    .miniRuleBox {
+        width: 277px;
+        height: 160px;
+    }
+    .miniRuleBox > p {
+        font-size: 29px;
+    }
+    .ruleBox2 {
+        min-width: 495px;
+        max-width: 840px;
+        width: 52%;
+    }
+    .ruleBox1 {
+        min-width: 745px;
+        max-width: 1248px;
+        width: 77%;
+    }
+    .subMiniRuleBox {
+        left: 15px;
+        top: -63px;
+    }
+    .page6Underline {
+        width: 210px;
+    }
+}
+
+/*MOBILE */
+
+.MOBbackgroundImage {
+    position: fixed;
+}
+
+.MOBmain {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.MOBsubmain1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+
+.MOBicon {
+    width: 145px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.MOBtextNight {
+    width: 340px;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.MOBtextNight1 > p {
+    margin: 0px;
+    font-size: 6rem;
+    color: #d21919;
+    letter-spacing: 1px;
+    font-family: Something Strange;
+}
+
+.MOBtextNight2 > p {
+    letter-spacing: 1.5px;
+    margin: 10px;
+    color: white;
+    font-family: Something Strange;
+    text-align: right;
+}
+
+.MOBsubmain2 > a > img {
+    cursor: pointer;
+    width: 53px;
+}
+
+.MOBcontent {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 15px 0px;
+    background: rgba(171, 171, 171, 0.119);
+    border: 2px solid rgba(210, 25, 25, 0.3);
+    box-shadow: inset 30px -30px 30px rgba(130, 130, 130, 0.119), inset -30px 30px 30px rgba(255, 255, 255, 0.119);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.MOBcontent > p {
+    font-size: 19px;
+    color: white;
+    font-family: "Something Strange";
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/static/images/favicon.png" type="image/png" />
+        <title>Leaderboard | Night Knitting</title>
+        <link rel="stylesheet" href="/static/css/style.css" />
+    </head>
+    <body class="backgroundImage">
+        <div class="P4main">
+            <div class="leaderBoard">
+                <p>LEADERBOARD</p>
+            </div>
+            <div>
+                <img class="line" src="/static/images/Underline.png" width="345px" />
+            </div>
+            <div class="board">
+                <div class="tableHeading">
+                    <span class="span1">
+                        <p>NAME</p>
+                        <img src="/static/images/Underline2.png" />
+                    </span>
+                    <span class="span2">
+                        <p>EMAIL</p>
+                        <img src="/static/images/Underline2.png" />
+                    </span>
+                    <span class="span3">
+                        <p>POINTS</p>
+                        <img src="/static/images/Underline2.png" />
+                    </span>
+                </div>
+                <div class="userBoard">
+                    <% for(var i = 0; i < data.length; i++){ %>
+                    <div class="user">
+                        <p id="serialNo"><%= i+1 %>.</p>
+                        <p id="name"><%= data[i].name.split(" ").slice(0, 2).join(" ") %></p>
+                        <p id="email"><%= data[i].email %></p>
+                        <p id="points"><%= data[i].score %></p>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

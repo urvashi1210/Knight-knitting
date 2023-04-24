@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Level-14</title>
+        <link rel="stylesheet" href="/static/css/level.css" />
+        <style>
+            .blink {
+                font-size: 30px;
+            }
+            span {
+                display: block;
+            }
+
+            span:not(.light) {
+                opacity: 0;
+            }
+
+            span.light {
+                content: " ";
+                height: 100px;
+                width: 100px;
+                border-radius: 100%;
+                display: inline-block;
+                background-color: transparent;
+                color: #1d1f20;
+                position: relative;
+                display: inline-block;
+            }
+            span.light:after {
+                position: absolute;
+                left: 0;
+                top: -10%;
+                width: 50%;
+                height: 50%;
+                border-radius: 50%;
+                background: #fff;
+                filter: blur(10px);
+                content: "";
+                opacity: 0;
+            }
+
+            .blink.long span:not(.light) {
+                -webkit-animation: flashText 0.6s ease-out alternate 2;
+                animation: flashText 0.6s ease-out alternate 2;
+            }
+
+            .blink.long span.light:after {
+                -webkit-animation: flash 0.6s ease-out alternate 2;
+                animation: flash 0.6s ease-out alternate 2;
+            }
+
+            .blink.short span:not(.light) {
+                -webkit-animation: flashText 0.2s ease-out alternate 2;
+                animation: flashText 0.2s ease-out alternate 2;
+            }
+
+            .blink.short span.light:after {
+                -webkit-animation: flash 0.2s ease-out alternate 2;
+                animation: flash 0.2s ease-out alternate 2;
+            }
+
+            @-webkit-keyframes flash {
+                to {
+                    color: #fff;
+                    opacity: 1;
+                }
+            }
+
+            @keyframes flash {
+                to {
+                    color: #fff;
+                    opacity: 1;
+                }
+            }
+            @-webkit-keyframes flashText {
+                to {
+                    color: #fff;
+                    opacity: 0.15;
+                }
+            }
+            @keyframes flashText {
+                to {
+                    color: #fff;
+                    opacity: 0.15;
+                }
+            }
+            .main {
+                position: relative;
+            }
+
+            .blink {
+                position: absolute;
+                top: 70%;
+                left: 2%;
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="ques"></div>
+            <div class="main">
+                <img class="img" src="/static/images/level-14.png" alt="" />
+                <% if(morse){ %>
+                <div class="blink"><span class="light"></span></div>
+                <% } %>
+            </div>
+            <% if(morse){ %>
+            <div class="ans">
+                <div class="input">
+                    <label for="answer">Answer : </label>
+                    <input id="answer" name="name" type="text" autocomplete="off" />
+                    <div class="submit">
+                        <button id="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+            <div class="home"><a href="/dashboard" role="button">Home</a></div>
+        </div>
+        <script src="/static/js/level-14.js"></script>
+    </body>
+</html>

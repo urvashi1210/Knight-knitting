@@ -3,23 +3,23 @@ const geoip = require("geoip-lite");
 const update_user = require("../utils/update_user");
 
 // Level-1
-router.get("/1", (req, res) => {
-    res.redirect("/level/1/in");
+router.get("/1/", (req, res) => {
+    res.redirect("/level/1/door-open");
 });
 
-router.get("/1/:id", (req, res) => {
+router.get("/1/:ans", (req, res) => {
     const { email, level } = req.user;
-    const { id } = req.params;
-    if (id == "in") res.render("levels/1");
-    else if (id == "out") update_user(email, level).then(() => res.redirect("/level/" + (level + 1)));
-    else res.redirect("/level/1/in");
+    const { ans } = req.params;
+    if (ans == "door-close") res.render("levels/1");
+    else if(ans=="door-open")update_user(email, level).then(() => res.redirect("/level/" + (level + 1)));
+    else res.redirect("/level/1");
 });
 
 // Level-2
-router.get("/2", (req, res) => {
+router.get("/2/:ans", (req, res) => {
     const { email, level } = req.user;
-    const { ans } = req.query;
-    if (ans == "level3") update_user(email, level).then(() => res.redirect("/level/" + (level + 1)));
+    const { ans } = req.params;
+    if (ans == "unknot") update_user(email, level).then(() => res.redirect("/level/" + (level + 1)));
     else res.render("levels/2");
 });
 
@@ -31,7 +31,7 @@ router.get("/3", (req, res) => {
 router.post("/3", (req, res) => {
     const { email, level } = req.user;
     const { ans } = req.body;
-    if (ans == "bagul") update_user(email, level).then(() => res.end());
+    if (ans == "macabre") update_user(email, level).then(() => res.end());
     else res.redirect("/level/3");
 });
 
@@ -44,7 +44,7 @@ router.post("/4", (req, res) => {
     console.log(req.body);
     const { email, level } = req.user;
     const { ans } = req.body;
-    if (ans == "more") update_user(email, level).then(() => res.end());
+    if (ans == "doomed") update_user(email, level).then(() => res.end());
     else res.redirect("/level/4");
 });
 
@@ -56,7 +56,7 @@ router.get("/5", (req, res) => {
 router.post("/5", (req, res) => {
     const { email, level } = req.user;
     const { ans } = req.body;
-    if (ans == "11bx1371") update_user(email, level).then(() => res.end());
+    if (ans == "ihave") update_user(email, level).then(() => res.end());
     else res.redirect("/level/5");
 });
 

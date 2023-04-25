@@ -250,8 +250,10 @@ input {
 }
 
 .home-7 {
-    position: absolute !important;
-    bottom: 67px !important;
+    /* position: absolute !important; */
+    /* bottom: 67px !important; */
+    position: relative !important;
+    bottom: 97px !important;
 }
 
 .arr-7 {

@@ -18,7 +18,7 @@ function feedme() {
     }
 }
 function click() {
-    document.querySelector(".img1").classList.add("hidden");
+    document.querySelector(".img1 ").classList.add("hidden");
 
     document.querySelector(".img2").classList.remove("hidden");
 

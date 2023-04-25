@@ -25,7 +25,7 @@ body {
     height: auto;
 }
 .hooks-2 {
-    height: 550px;
+    height: 450px;
 }
 
 .letters {
@@ -64,6 +64,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+
     justify-content: space-around;
     height: 100vh;
     z-index: 0;
@@ -212,7 +213,7 @@ input {
 
 .home-3 {
     position: relative;
-    bottom: 27px;
+    bottom: 97px;
 }
 
 .ans-5 {
@@ -232,19 +233,6 @@ input {
     margin-top: -30px;
 
     max-width: 100%;
-}
-.hooks {
-    position: relative;
-    z-index: 1;
-    margin-top: 50px;
-    width: 200px;
-    height: auto;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-    max-width: 100%;
-    height: auto;
 }
 
 .img-6 {
@@ -268,4 +256,8 @@ input {
 
 .arr-7 {
     margin-bottom: 44px;
+}
+
+.input-3 {
+    bottom: 7px !important;
 }

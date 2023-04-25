@@ -187,3 +187,34 @@ input {
     top: 350px;
     left: 730px;
 }
+
+.head-3 {
+    position: absolute;
+    z-index: 9;
+}
+
+.hooks {
+    margin-top: 50px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+    width: auto;
+    text-align: center;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
+}
+.ans-3 {
+    position: relative;
+    bottom: 20px;
+    margin-top: -20px;
+}
+
+.home-3 {
+    position: relative;
+    bottom: 18px;
+}
+
+.ans-5 {
+    position: relative;
+}

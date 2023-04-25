@@ -3,7 +3,7 @@ let ans;
 document.querySelector("area").addEventListener("click", click);
 
 function feedme() {
-    ans = prompt("you are : ");
+    ans = prompt("saw the clue? if not, then you are : ");
     if (ans == false) alert("Enter valid answer");
     else {
         const xhr = new XMLHttpRequest();
@@ -21,5 +21,6 @@ function click() {
     document.querySelector(".img1").classList.add("hidden");
 
     document.querySelector(".img2").classList.remove("hidden");
+
     feedme();
 }

@@ -19,7 +19,7 @@ router.get("/1/:id", (req, res) => {
 router.get("/2", (req, res) => {
     const { email, level } = req.user;
     const { ans } = req.query;
-    if (ans == "level3") update_user(email, level).then(() => res.redirect("/level/" + (level + 1)));
+    if (ans == "unknot") update_user(email, level).then(() => res.redirect("/level/" + (level + 1)));
     else res.render("levels/2");
 });
 

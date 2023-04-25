@@ -14,6 +14,15 @@ body {
 
 .hooks {
     z-index: 1;
+    margin-top: 50px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+    width: auto;
+    text-align: center;
+    padding: 15px;
+    max-width: 100%;
+    height: auto;
 }
 .hooks-2 {
     height: 550px;
@@ -184,8 +193,9 @@ input {
     background-color: red;
     padding: 4%;
     opacity: 0;
-    top: 350px;
-    left: 730px;
+    top: 300px;
+    left: 930px;
+    z-index: 9;
 }
 
 .head-3 {
@@ -193,17 +203,6 @@ input {
     z-index: 9;
 }
 
-.hooks {
-    margin-top: 50px;
-    width: 600px;
-    height: auto;
-    text-align: center;
-    width: auto;
-    text-align: center;
-    padding: 15px;
-    max-width: 100%;
-    height: auto;
-}
 .ans-3 {
     position: relative;
     bottom: 20px;
@@ -212,9 +211,47 @@ input {
 
 .home-3 {
     position: relative;
-    bottom: 18px;
+    bottom: 27px;
 }
 
 .ans-5 {
     position: relative;
+}
+
+.imgg {
+    z-index: 1;
+    position: relative;
+
+    margin-top: 50px;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -30px;
+
+    max-width: 100%;
+}
+
+.img-6 {
+    z-index: 1;
+    position: relative;
+
+    width: 900px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: -30px;
+    max-width: 100%;
+}
+
+.home-7 {
+    position: absolute !important;
+    bottom: 67px !important;
+}
+
+.arr-7 {
+    margin-bottom: 44px;
 }
